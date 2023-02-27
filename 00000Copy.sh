@@ -16,7 +16,7 @@ echo "Found the following bold files:"
 echo "$bold_files"
 
 # Find all files matching the pattern *desc-brain_mask.nii.gz in the source directory, filtered by the list of clean subjects
-mask_files=$(find $src_dir -name "*ses-session1_task-loc_run-001_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz" | grep -F "$subjects")
+mask_files=$(find $src_dir -name "*ses-session1_task-rest_run-001_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz" | grep -F "$subjects")
 
 # Print the list of mask files found matching the pattern and filtered by the list of clean subjects
 echo "Found the following mask files:"

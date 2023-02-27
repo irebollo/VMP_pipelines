@@ -8,8 +8,7 @@ ft_defaults
 tic
 
 cfgMain = global_getcfgmain;
-subject_list = load('/home/ignacio/vmp_pipelines_gastro/list_clean_subjects.txt');
-subj_idx = subject_list(iSubj)
+
 dataDir=[global_path2root,'fMRI_timeseries/sub-',sprintf('%.4d',subj_idx),'/']
 plotDir = dataDir;
 
