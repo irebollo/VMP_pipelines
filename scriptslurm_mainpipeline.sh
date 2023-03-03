@@ -1,5 +1,5 @@
 #!/bin/bash  
-#SBATCH --array=1-213 #specify how many times you want a job to run, we have a total of 7 array spaces
+#SBATCH --array=1-72 #specify how many times you want a job to run, we have a total of 7 array spaces
 # everything below this line is optional, but are nice to have quality of life things  
 #SBATCH --output=logs/GASTRO%A_%a.out
 #SBATCH --error=logs/GASTRO%A_%a.err

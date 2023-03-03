@@ -1,5 +1,5 @@
 #!/bin/bash  
-#SBATCH --array=0-212 #specify how many times you want a job to run, we have a total of 7 array spaces
+#SBATCH --array=0-71 #specify how many times you want a job to run, we have a total of 7 array spaces
 # everything below this line is optional, but are nice to have quality of life things  
 #SBATCH --output=logs/gastro%A_%a.out
 #SBATCH --error=logs/gastro%A_%a.err
@@ -12,4 +12,4 @@
 
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 python reslice_smooth.py $SLURM_ARRAY_TASK_ID
-# python reslice_brainmask.py $SLURM_ARRAY_TASK_ID
+python reslice_brainmask.py $SLURM_ARRAY_TASK_ID

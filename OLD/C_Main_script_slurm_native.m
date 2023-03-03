@@ -5,8 +5,8 @@ addpath('/home/ignacio/fieldtrip/');
 ft_defaults
 cfgMain=global_getcfgmain;
 
-
-allSubjs=load('/home/ignacio/vmp_pipelines_gastro/list_clean_subjects.txt');
+allSubjs=load('/home/ignacio/vmp_pipelines_gastro/list_toprepro_subjects.txt');
+%allSubjs=load('/home/ignacio/vmp_pipelines_gastro/list_clean_subjects.txt');
 %allSubjs=load('/home/ignacio/vmp_pipelines_gastro/list_clean_subjects_redo.txt');
 
 subj_idx=allSubjs(iSubj)

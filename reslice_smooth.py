@@ -32,7 +32,7 @@ file_list = list_files(fmriprep_folder, "*sub*")
 
 # %% Make subject folders
 
-with open('/home/ignacio/vmp_pipelines_gastro/list_clean_subjects.txt', 'r') as file:
+with open('/home/ignacio/vmp_pipelines_gastro/list_toprepro_subjects.txt', 'r') as file:
     list_subjects = [line.strip() for line in file.readlines()]
 subj_name="sub-"+list_subjects[int(iSubj)]    
 

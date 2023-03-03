@@ -44,7 +44,7 @@ ft_defaults
 
 cfgMain=global_getcfgmain;
 
-subject_list = load('/home/ignacio/vmp_pipelines_gastro/list_prepro_subjects.txt');
+subject_list = load('/home/ignacio/vmp_pipelines_gastro/list_toprepro_subjects.txt');
 subj_idx = subject_list(iSubj)
 
 fOrder = cfgMain.fOrder;
